@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+.button-container {
+  margin: 50px auto;
+  width: 100px;
+}
+
+button {
+  width: 100px;
+}
+
 #container {
   width: 400px;
   margin: 100px auto 0;
