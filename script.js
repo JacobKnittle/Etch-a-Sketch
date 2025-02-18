@@ -7,6 +7,10 @@ function createGrid(size) {
     for (let j = 0; j < size; j++) {
       let square = document.createElement("div");
       square.className = "square";
+      square.setAttribute(
+        "style",
+        `height: calc(100% / ${size}); width: calc(100% / ${size})`
+      );
       container.appendChild(square);
     }
   }

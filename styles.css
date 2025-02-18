@@ -5,7 +5,7 @@
 }
 
 .button-container {
-  margin: 50px auto;
+  margin: 50px auto 0px;
   width: 100px;
 }
 
@@ -14,17 +14,15 @@ button {
 }
 
 #container {
-  width: 1000px;
-  margin: 100px auto 0;
+  width: 800px;
+  height: 500px;
+  margin: 50px auto 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .square {
   border: 1px solid grey;
-  flex: 1 1 auto;
-  height: 25px;
-  width: 24px;
 }
 
 .fillIn {
