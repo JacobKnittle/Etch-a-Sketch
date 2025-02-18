@@ -14,7 +14,7 @@ button {
 }
 
 #container {
-  width: 400px;
+  width: 1000px;
   margin: 100px auto 0;
   display: flex;
   flex-wrap: wrap;

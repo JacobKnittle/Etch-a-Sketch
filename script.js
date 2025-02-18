@@ -1,6 +1,6 @@
 // container div
 const container = document.querySelector("#container");
-
+const gridButton = document.querySelector(".grid-button");
 //creates grid of square divs
 function createGrid(size) {
   for (let i = 0; i < size; i++) {
@@ -16,13 +16,19 @@ createGrid(16);
 // adds a grey background color to a div
 container.addEventListener("mouseover", (e) => {
   e.target.classList.add("fillIn");
-  console.log(e.target);
 });
 
-// add a button to the top that sends a popup for user input of grid size with a 100 limit
+// when the grid button is clicked it sends a prompt for user input of grid size with a 100 limit
 
-// button that runs the grid creation function
+gridButton.addEventListener("click", () => {
+  let gridSize;
+  do {
+    gridSize = prompt("What Size Grid?");
+  } while (gridSize > 100);
 
-// remove existing grid
+  // remove existing grid
+  container.textContent = "";
+  createGrid(gridSize);
+});
 
-// general the new grid in the same total space
+// create the new grid in the same total space
